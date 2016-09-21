@@ -20,6 +20,7 @@
     "cowsay": "^1.1.8"
   },
   "devDependencies": {
+    "cowsay": "^1.1.8",
     "eslint": "^3.5.0",
     "gulp": "^3.9.1"
   }
