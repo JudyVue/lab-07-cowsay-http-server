@@ -48,7 +48,7 @@ const server = http.createServer(function(req, res){
 
   if (req.method === 'POST' && req.url.pathname === '/cowsay'){
     if(!req.body || !req.body.text){
-      res.writeHead(400);
+      res.writeHead(400, {'Content-Type': 'text/plain'});
       res.write(cowsay.say({text: 'bad request\ntry: localhost:3000/cowsay?text=howdy'}));
       res.end();
       return;
