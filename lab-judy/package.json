@@ -1,0 +1,26 @@
+{
+  "name": "lab-07-cowsay-http-server",
+  "version": "1.0.0",
+  "description": "Lab 7 ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JudyVue/lab-07-cowsay-http-server.git"
+  },
+  "author": "Judy Vue",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JudyVue/lab-07-cowsay-http-server/issues"
+  },
+  "homepage": "https://github.com/JudyVue/lab-07-cowsay-http-server#readme",
+  "dependencies": {
+    "cowsay": "^1.1.8"
+  },
+  "devDependencies": {
+    "eslint": "^3.5.0",
+    "gulp": "^3.9.1"
+  }
+}
