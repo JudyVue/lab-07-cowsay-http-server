@@ -9,7 +9,6 @@ const queryString = require('querystring');
 //npm modules
 const cowsay = require('cowsay');
 
-console.log(process.argv[0]);
 
 
 //app modules
@@ -24,10 +23,9 @@ const server = http.createServer(function(req, res){
   req.url = url.parse(req.url);
   req.url.query = queryString.parse(req.url.query);
 
-  if(req.method === 'GET' && req.url.pathname === '/'){
+  if(req.url.pathname === '/'){
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.write('hello world\n');
-    res.write(cowsay.think({text: 'moo'}));
     res.end();
     return;
   }
